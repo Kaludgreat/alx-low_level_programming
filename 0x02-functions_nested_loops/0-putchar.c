@@ -1,19 +1,12 @@
-#include "main.h"
-/**
- * main - entry block
- * @void: no argument
- * Return: 0
- **/
-int main(void)
+#include <unistd.h>
+/* 
+ * _putchar writes the character c to stdout
+ * @c : The character to print
+ * Return : on success 1.
+ * on error 
+ */
+int _putchart(char c)
 {
-	char c[] = "_putchar";
-	int i;
-
-	for (i = 0; i < 8; i++)
-	{
-		_putchar(c[i]);
-	}
-	_putchar('\n');
-	return (0);
-
+	return (write(1,&c,1));
 }
+
