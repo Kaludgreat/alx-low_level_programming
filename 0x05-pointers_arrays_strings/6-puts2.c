@@ -1,21 +1,19 @@
 #include "main.h"
 
 /**
- * main - check the code for Holberton School students.
+ * puts2 - print every other character of a string
+ * @str: the string to print
  *
- * Return: Always 0.
+ * Return: void
  */
-int main(void)
+void puts2(char *str)
 {
-    char *str;
-
-    str = "0123456789";
-    puts2(str);
-    str = "666";
-    puts2(str);
-    str = "#";
-    puts2(str);
-    str = "";
-    puts2(str);
-    return (0);
+	if (str)
+	{
+		do {
+			if (*str)
+				_putchar(*str++);
+		} while (*str++);
+		_putchar('\n');
+	}
 }
